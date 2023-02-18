@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Reto # 1</title>
+</head>
+
+<body>
+    <main id="main" class="main">
+        <form action="" class="form" id="form">
+
+            <img src="./assets/img/Producto.png" alt="Laptop Gaming">
+            <h1 id="producto">ROG Strix G15</h1>
+            <strong>Precio: $ 8.399.000</strong>
+
+            <label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+
+
+            <label for="color">Color</label>
+            <select name="color" id="color" required>
+                <option>Selecciona</option>
+                <option value="Azul">Azul Oscuro</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Gris">Gris</option>
+                <option value="Negro">Negro</option>
+            </select>
+            
+            <button type="submit" class="btnCalcular" id="btnCalcular">Calcular Total</button>
+        </form>
+        <div class="resultado">
+            <h2>Factura</h2>
+            
+            <p class="resultadoTexto">Total: <strong id="pTotal"></strong></p>
+            <p class="resultadoTexto">Cantidad: <strong id="pCantidad"></strong></p>
+            <p id="pcolor" class="resultadoTexto">color: <strong id="pColor" class="pColor border">col</strong></p>
+        </div>
+        
+    </main>
+    <script src="./dist/main.js"></script>
+
+
+</body>
+
+</html>
